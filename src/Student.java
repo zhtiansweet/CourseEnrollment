@@ -4,12 +4,12 @@ import java.util.ArrayList;
  * Created by tianzhang on 5/23/15.
  */
 public abstract class Student {
-    public static final int MAX_COURSE=4;       //A student could select as many as 4 courses per quarter
+    private static final int MAX_COURSE=4;       //A student could select as many as 4 courses per quarter
     private int id;     //Unique for each student
     private String degree;      //undergrad, grad
     private String name;
-    private ArrayList<Course> enrollList;      //The courses the student has been enrolled
-    private ArrayList<Course> waitList;     //The courses whose waiting lists the student is on
+    private ArrayList<Course> enrollList;      //The courses this student has been enrolled into
+    private ArrayList<Course> waitList;     //The courses whose waiting lists this student is on
 
     //Constructor
     public Student(int i, String nm, String deg){
