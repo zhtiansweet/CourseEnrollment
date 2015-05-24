@@ -59,7 +59,7 @@ The subclasses ```UndergradStudent``` and ```GradStudent``` inherit from supercl
 * ```boolean add``` 
     * Call ```boolean addCourse```
 
-```Course``` fields (all private):
+```class Course``` fields (all private):
 * ```int id``` (Unique for each course)
 * ```String name```
 * ```String instructor```
@@ -70,7 +70,7 @@ The subclasses ```UndergradStudent``` and ```GradStudent``` inherit from supercl
 * ```ArrayList<Student> studentList``` (Students that has been enrolled)
 * ```ArrayList<Student> studentWl``` (Students on waiting list)
 
-```Course``` methods (all public):
+```class Course``` methods (all public):
 * Constructor
 * Setters & Getters
 * ```void printStudentList``` (Print out studentList & studentWl)
