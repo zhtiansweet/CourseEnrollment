@@ -3,7 +3,7 @@ Course Enrollment System
 IDE: IntelliJ
 If you have problems on opening the whole project, please open a new project in your IDE and run the 4 .java files in src folder.
 
-The class CourseEnroll implements interface EnrollActivity and contains a main function. You could add some courses and students and modify the enrollment activities to play with the system.
+The class CourseEnroll implements interface EnrollActivity and contains a main function. I initialized some courses and students, and generated enrollment activities randomly. You could add some courses and students and modify the enrollment activities to play with the system. You could add some courses and students and modify the enrollment activities to play with the system.
 
 The subclasses UndergradStudent and GradStudent inherit from superclass Student. And I also designed a class Course.
 
@@ -17,6 +17,7 @@ The subclasses UndergradStudent and GradStudent inherit from superclass Student.
 * Undergraduate students could only select courses with id under 400, and Graduate students could only select courses with id over 300.
 
 =====Class & Interface Details=====
+
 The fields and methods of each class and interface are as below.
 
 interface EntollActivity methods:
@@ -53,15 +54,15 @@ class UndergradStudent extends Student extra field:
 * static final String degree = "undergrad"
 
 class UndergradStudent extends Student extra method:
-* boolean add (Undergraduate students could only select courses with id under 400)
-    * Call boolean addCourse
+* @Override boolean addCourse
+  * Call Student.addCourse
 
 class GradStudent extends Student extra field:
 * static final String degree = "grad"
 
 class GradStudent extends Student extra method:
-* boolean add (Graduate students could only select courses with id over 300)
-    * Call boolean addCourse
+* @Override boolean addCourse
+  * Call Student.addCourse
 
 class Course fields (all private):
 
