@@ -1,7 +1,7 @@
 # Course Enrollment System
 This is an OO design of course enrollment system.
 
-The class ```CourseEnroll``` implements interface ```EnrollActivity``` and contains a main function. You could add some courses and students and modify the enrollment activities to play with the system.
+The class ```CourseEnroll``` implements interface ```EnrollActivity``` and contains a main function. I initialized some courses and students, and generated enrollment activities randomly. You could add some courses and students and modify the enrollment activities to play with the system.
 
 The subclasses ```UndergradStudent``` and ```GradStudent``` inherit from superclass ```Student```. And I also designed a class ```Course```.
 
@@ -47,15 +47,15 @@ The subclasses ```UndergradStudent``` and ```GradStudent``` inherit from supercl
 * ```static final String degree = "undergrad"```
 
 ```class UndergradStudent extends Student``` extra method:
-* ```boolean add```
-    * Call ```boolean addCourse```
+* ```@Override boolean addCourse```
+    * Call ```Student.addCourse```
 
 ```class GradStudent extends Student``` extra field:
 * ```static final String degree = "grad"```
 
 ```class GradStudent extends Student``` extra method:
-* ```boolean add``` 
-    * Call ```boolean addCourse```
+* ```@Override boolean addCourse```
+    * Call ```Student.addCourse```
 
 ```class Course``` fields (all private):
 * ```int id``` (Unique for each course)
