@@ -131,5 +131,4 @@ public class CourseEnroll implements EnrollActivity{
         Random rm = new Random();
         return rm.nextInt(max-min+1)+min;
     }
-
 }
